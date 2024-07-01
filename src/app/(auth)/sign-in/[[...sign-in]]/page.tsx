@@ -39,9 +39,7 @@ export default function Page() {
         </div>
       </section>
   
-      <main
-        className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
-      >
+      <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
         <div className="max-w-xl lg:max-w-3xl">
           <div className="relative -mt-16 block lg:hidden">
             <a
@@ -63,7 +61,7 @@ export default function Page() {
             </a>
   
             <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-              Welcome to Squid 🦑
+              Welcome to AI Interviewz 🦑
             </h1>
   
             <p className="mt-4 leading-relaxed text-gray-500">
@@ -71,9 +69,10 @@ export default function Page() {
               quibusdam aperiam voluptatum.
             </p>
           </div>
-   <SignIn />;
+            <SignIn />;
 
         </div>
+        
       </main>
     </div>
   </section>

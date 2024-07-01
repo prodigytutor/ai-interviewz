@@ -1,10 +1,18 @@
 import React from 'react'
+import Header from './_components/header'
 
-type Props = {}
+interface DashboardLayoutProps {
+  children: React.ReactNode;
+}
 
-function DashboardLayout ({children}) {
+function DashboardLayout ({children}: DashboardLayoutProps) {
   return (
-    <div>{children}</div>
+    <header>
+      <Header />
+      <div className='mx-5 md:mx-20 lg:mx-36'>
+        {children}
+      </div>
+    </header>
   )
 }
 export default DashboardLayout
