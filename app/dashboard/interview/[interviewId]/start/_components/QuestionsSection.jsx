@@ -3,7 +3,29 @@ import React from 'react'
 
 function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
  
-    
+
+    let arrMockInterviewQuestion = []
+    // Object.keys(mockInterviewQuestion).map(function (key) {
+    //     arrMockInterviewQuestion.push(mockInterviewQuestion[key])
+    //     return arrMockInterviewQuestion;
+    // });
+    // mockInterviewQuestion.keys.map((question, index) => { 
+    //     arrMockInterviewQuestion.push(mockInterviewQuestion[index])
+    //     return arrMockInterviewQuestion;
+    // })
+    arrMockInterviewQuestion = JSON.parse(JSON.stringify(mockInterviewQuestion));
+    console.log(typeof arrMockInterviewQuestion)
+    if (Array.isArray(arrMockInterviewQuestion)) {
+        console.log('Mock interview is array')
+    } else {
+        console.log('Mock interview is not array')
+    }
+    console.log("mockInterviewQuestion",mockInterviewQuestion)
+    console.log(
+        "activeQuestionIndex",
+        activeQuestionIndex,
+        ""
+    )
     const textToSpeach=(text)=>{
         if('speechSynthesis' in window){
             const speech=new SpeechSynthesisUtterance(text);
