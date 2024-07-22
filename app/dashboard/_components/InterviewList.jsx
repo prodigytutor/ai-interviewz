@@ -36,10 +36,16 @@ function InterviewList() {
                 key={index} />
             ))
             :
-            [1,2,3,4].map((item,index)=>(
+<div>
                 <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg '>
                 </div>
-            ))
+                <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg '>
+                </div>
+                <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg '>
+                </div>
+                <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg '>
+                </div>
+</div>
         }
         </div>
     </div>

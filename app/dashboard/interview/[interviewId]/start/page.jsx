@@ -13,7 +13,9 @@ function StartInterview({params}) {
     const [interviewData,setInterviewData]=useState();
     const [mockInterviewQuestion,setMockInterviewQuestion]=useState();
     const [activeQuestionIndex,setActiveQuestionIndex]=useState(0);
+    console.log("starting interview")
     useEffect(()=>{
+        console.log("In useEffect")
         GetInterviewDetails();
     },[]);
 
@@ -21,12 +23,13 @@ function StartInterview({params}) {
      * Used to Get Interview Details by MockId/Interview Id
      */
     const GetInterviewDetails=async()=>{
+      console.log("getting interview details")
         const result=await db.select().from(MockInterview)
         .where(eq(MockInterview.mockId,params.interviewId))
 
         //const jsonMockResp=JSON.parse(result[0].jsonMockResponse);
         const jsonMockResp=result[0].jsonMockResponse;
-        console.log(jsonMockResp)
+        console.log("these are the interview details", jsonMockResp)
         setMockInterviewQuestion(jsonMockResp);
         setInterviewData(result[0]);
     } 

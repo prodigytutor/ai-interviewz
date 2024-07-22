@@ -26,7 +26,6 @@ function InterviewItemCard({interview}) {
             <Button size="sm" className="w-full"
             onClick={onStart}
             >Start</Button>
-
         </div>
     </div>
   )

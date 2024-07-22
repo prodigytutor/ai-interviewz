@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "AI-Interviewz",
+            "connectString": "postgresql://prodigytutor:3PFTnKG6xeQS@ep-silent-rice-09720960.us-east-2.aws.neon.tech/ai-interviewz?sslmode=require"
+        }
+    ]
+}

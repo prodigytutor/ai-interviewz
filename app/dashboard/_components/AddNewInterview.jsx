@@ -19,6 +19,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useUser } from '@clerk/nextjs'
 import moment from 'moment'
 import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 
 function AddNewInterview() {
     const [openDailog,setOpenDailog]=useState(false)
@@ -55,6 +56,7 @@ function AddNewInterview() {
         }).returning({mockId:MockInterview.mockId});
 
         console.log("Inserted ID:",resp)
+        toast("Inserted ID:",resp)
         if(resp)
         {
             setOpenDailog(false);

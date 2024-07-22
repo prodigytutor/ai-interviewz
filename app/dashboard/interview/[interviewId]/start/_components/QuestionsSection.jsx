@@ -13,6 +13,7 @@ function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
     //     arrMockInterviewQuestion.push(mockInterviewQuestion[index])
     //     return arrMockInterviewQuestion;
     // })
+    console.log("mock", mockInterviewQuestion)
     arrMockInterviewQuestion = JSON.parse(JSON.stringify(mockInterviewQuestion));
     console.log(typeof arrMockInterviewQuestion)
     if (Array.isArray(arrMockInterviewQuestion)) {
